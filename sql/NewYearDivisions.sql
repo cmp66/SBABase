@@ -1,0 +1,12 @@
+INSERT INTO TEAMRESULTS (teamid, divisionid, year, leagueid, won, lost, divisionwin, divisionloss, divisiontitle, worldseriesapp, worldserieswin) VALUES (4,3,2005,1,0,0,0,0,0,0,0);
+INSERT INTO TEAMRESULTS (teamid, divisionid, year, leagueid, won, lost, divisionwin, divisionloss, divisiontitle, worldseriesapp, worldserieswin) VALUES (10,3,2005,1,0,0,0,0,0,0,0);
+INSERT INTO TEAMRESULTS (teamid, divisionid, year, leagueid, won, lost, divisionwin, divisionloss, divisiontitle, worldseriesapp, worldserieswin) VALUES (12,3,2005,1,0,0,0,0,0,0,0);
+INSERT INTO TEAMRESULTS (teamid, divisionid, year, leagueid, won, lost, divisionwin, divisionloss, divisiontitle, worldseriesapp, worldserieswin) VALUES (13,3,2005,1,0,0,0,0,0,0,0);
+INSERT INTO TEAMRESULTS (teamid, divisionid, year, leagueid, won, lost, divisionwin, divisionloss, divisiontitle, worldseriesapp, worldserieswin) VALUES (6,2,2005,1,0,0,0,0,0,0,0);
+INSERT INTO TEAMRESULTS (teamid, divisionid, year, leagueid, won, lost, divisionwin, divisionloss, divisiontitle, worldseriesapp, worldserieswin) VALUES (7,2,2005,1,0,0,0,0,0,0,0);
+INSERT INTO TEAMRESULTS (teamid, divisionid, year, leagueid, won, lost, divisionwin, divisionloss, divisiontitle, worldseriesapp, worldserieswin) VALUES (8,2,2005,1,0,0,0,0,0,0,0);
+INSERT INTO TEAMRESULTS (teamid, divisionid, year, leagueid, won, lost, divisionwin, divisionloss, divisiontitle, worldseriesapp, worldserieswin) VALUES (9,2,2005,1,0,0,0,0,0,0,0);
+INSERT INTO TEAMRESULTS (teamid, divisionid, year, leagueid, won, lost, divisionwin, divisionloss, divisiontitle, worldseriesapp, worldserieswin) VALUES (1,1,2005,1,0,0,0,0,0,0,0);
+INSERT INTO TEAMRESULTS (teamid, divisionid, year, leagueid, won, lost, divisionwin, divisionloss, divisiontitle, worldseriesapp, worldserieswin) VALUES (2,1,2005,1,0,0,0,0,0,0,0);
+INSERT INTO TEAMRESULTS (teamid, divisionid, year, leagueid, won, lost, divisionwin, divisionloss, divisiontitle, worldseriesapp, worldserieswin) VALUES (3,1,2005,1,0,0,0,0,0,0,0);
+INSERT INTO TEAMRESULTS (teamid, divisionid, year, leagueid, won, lost, divisionwin, divisionloss, divisiontitle, worldseriesapp, worldserieswin) VALUES (11,1,2005,1,0,0,0,0,0,0,0);

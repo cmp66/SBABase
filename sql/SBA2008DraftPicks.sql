@@ -1,0 +1,105 @@
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 1, 1, 0, 1);  
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 2, 2, 0, 1);  
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 3, 3, 0, 1);  
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 4, 4, 0, 1);  
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 6, 6, 0, 1);  
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 7, 7, 0, 1);  
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 8, 8, 0, 1);  
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 9, 9, 0, 1);  
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 10, 10, 0, 1);
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 11, 11, 0, 1);
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 12, 12, 0, 1);
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 13, 13, 0, 1);
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 1, 1, 0, 2);  
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 2, 2, 0, 2);  
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 3, 3, 0, 2);  
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 4, 4, 0, 2);  
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 6, 6, 0, 2);  
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 7, 7, 0, 2);  
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 8, 8, 0, 2);  
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 9, 9, 0, 2);  
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 10, 10, 0, 2);
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 11, 11, 0, 2);
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 12, 12, 0, 2);
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 13, 13, 0, 2);
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 1, 1, 0, 3);  
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 2, 2, 0, 3);  
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 3, 3, 0, 3);  
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 4, 4, 0, 3);  
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 6, 6, 0, 3);  
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 7, 7, 0, 3);  
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 8, 8, 0, 3);  
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 9, 9, 0, 3);  
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 10, 10, 0, 3);
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 11, 11, 0, 3);
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 12, 12, 0, 3);
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 13, 13, 0, 3);
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 1, 1, 0, 4);  
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 2, 2, 0, 4);  
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 3, 3, 0, 4);  
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 4, 4, 0, 4);  
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 6, 6, 0, 4);  
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 7, 7, 0, 4);  
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 8, 8, 0, 4);  
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 9, 9, 0, 4);  
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 10, 10, 0, 4);
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 11, 11, 0, 4);
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 12, 12, 0, 4);
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 13, 13, 0, 4);
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 1, 1, 0, 5);  
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 2, 2, 0, 5);  
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 3, 3, 0, 5);                                                                                                                   
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 4, 4, 0, 5);                                                                                                                   
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 6, 6, 0, 5);                                                                                                                   
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 7, 7, 0, 5);                                                                                                                   
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 8, 8, 0, 5);                                                                                                                   
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 9, 9, 0, 5);                                                                                                                   
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 10, 10, 0, 5);                                                                                                                 
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 11, 11, 0, 5);                                                                                                                 
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 12, 12, 0, 5);                                                                                                                 
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 13, 13, 0, 5);                                                                                                                 
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 1, 1, 0, 6);                                                                                                                   
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 2, 2, 0, 6);                                                                                                                   
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES 2008, 3, 3, 0, 6);                                                                                                                   
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 4, 4, 0, 6);                                                                                                                   
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 6, 6, 0, 6);                                                                                                                   
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 7, 7, 0, 6);                                                                                                                   
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 8, 8, 0, 6);                                                                                                                   
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 9, 9, 0, 6);                                                                                                                   
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 10, 10, 0, 6);                                                                                                                 
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 11, 11, 0, 6);                                                                                                                 
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 12, 12, 0, 6);                                                                                                                 
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 13, 13, 0, 6);                                                                                                                 
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 1, 1, 0, 7);                                                                                                                   
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 2, 2, 0, 7);                                                                                                                   
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 3, 3, 0, 7);                                                                                                                   
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 4, 4, 0, 7);                                                                                                                   
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 6, 6, 0, 7);                                                                                                                   
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 7, 7, 0, 7);                                                                                                                   
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 8, 8, 0, 7);                                                                                                                   
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 9, 9, 0, 7);                                                                                                                   
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 10, 10, 0, 7);                                                                                                                 
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 11, 11, 0, 7);                                                                                                                 
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 12, 12, 0, 7);                                                                                                                 
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 13, 13, 0, 7);                                                                                                                 
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 1, 1, 0, 8);                                                                                                                   
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 2, 2, 0, 8);                                                                                                                   
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 3, 3, 0, 8);                                                                                                                   
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 4, 4, 0, 8);                                                                                                                   
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 6, 6, 0, 8);                                                                                                                   
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 7, 7, 0, 8);                                                                                                                   
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 8, 8, 0, 8);                                                                                                                   
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 9, 9, 0, 8);                                                                                                                   
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 10, 10, 0, 8);                                                                                                                 
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 11, 11, 0, 8);                                                                                                                 
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 12, 12, 0, 8);                                                                                                                 
+INSERT into draftpicks (draftyear, slotteam, ownerteam, playerid, round) VALUES (2008, 13, 13, 0, 8);                                                                                                                 
+
+                                                                                                                 
+                                                                                                                 
+                                                                                                                 
+                                                                                                                 
+                                                                                                                 
+                                                                                                                 
+                                                                                                                 
+                                                                                                                 

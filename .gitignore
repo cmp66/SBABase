@@ -1,0 +1,26 @@
+# Code compiled 
+*bin*
+
+# Eclipse project files
+*.classpath*
+*.settings*
+*.project*
+*/data/*
+pom.xml.versionsBackup
+
+# ClearCase Remote Client metadata files
+*.copyarea.db
+
+# Mac OS X Finder metadata files
+*.DS_Store
+
+# emacs temporary files
+.saves*
+\#*
+.\#*
+
+# vim temporary files
+*.swp
+
+# Python project files
+*.pydevproject
