@@ -384,7 +384,7 @@ public class PlayerManager
             wkConn = DBUtil.getReadOnlyDBConnection();
             wkStatement = wkConn.prepareStatement(CARDED_LIST_SQL);
             
-            wkStatement.setInt(1, 2011);
+            wkStatement.setInt(1, 2012);
             
             wkResultSet = wkStatement.executeQuery();
             
