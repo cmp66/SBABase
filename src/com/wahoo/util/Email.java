@@ -66,6 +66,7 @@ public class Email
 
 			Properties	wkProps = new Properties();
 			wkProps.put("mail.smtp.host", "mail.wahoosoftware.com");
+			wkProps.put("mail.smtp.port", "5125");
 			wkProps.put("mail.smtp.auth", "true");
             //wkProps.put("mail.user", "cphillips");
             //wkProps.put("mail.password", "buckeye");
