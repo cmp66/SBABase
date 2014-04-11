@@ -13,12 +13,12 @@ import java.lang.reflect.Method;
  *
  * @author  Administrator
  */
-@SuppressWarnings("unchecked")
+@SuppressWarnings("rawtypes")
 public class Closer
 {
     String      _closeMethod = "close";
     Object[]    _closeArgs = {};
-    Class[]     _closeTypes = {};
+	Class[]     _closeTypes = {};
     Vector      _objectVec = new Vector();
     Vector      _exceptionVec = new Vector();
     boolean     _closeDone = false;
@@ -50,7 +50,8 @@ public class Closer
         return;
     }
 
-    public synchronized void add( Object inObj )
+    @SuppressWarnings("unchecked")
+	public synchronized void add( Object inObj )
     {
         if ( getCloseDone() )
             throw new IllegalStateException( "Add not valid in this state: close done." );
@@ -71,7 +72,8 @@ public class Closer
         return;
     }
 
-    public synchronized void close()
+    @SuppressWarnings("unchecked")
+	public synchronized void close()
     {
         if ( getCloseDone() )
             return;
@@ -111,7 +113,8 @@ public class Closer
         return _closeArgs.clone();
     }
 
-    public Throwable[] getExceptions()
+    @SuppressWarnings("unchecked")
+	public Throwable[] getExceptions()
     {
         return (Throwable[]) _exceptionVec.toArray( new Throwable[] {} );
     }

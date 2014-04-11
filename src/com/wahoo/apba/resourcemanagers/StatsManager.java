@@ -64,55 +64,55 @@ public class StatsManager
     private static final String SLUG_SQL =    "select playerid, SUM(bat_ab) AS ab, SUM(bat_walks) as bb, SUM(bat_hits) as hits,SUM(bat_doubles) as doubles, SUM(bat_triples) as triples," +
                                               "SUM(bat_hr) as hr FROM statrecords where season = ? GROUP BY playerid " +
                                               "ORDER BY (SUM(bat_hits)+SUM(bat_doubles)+2*SUM(bat_triples)+3*SUM(bat_hr))/(SUM(bat_ab)+0.1) desc";
-    private static final String DOUBLES_SQL =  "select playerid, SUM(?) AS ? FROM statrecords where season = ? GROUP BY playerid " +
-                                              "ORDER BY SUM(bat_doubles) desc";
-    private static final String TRIPLES_SQL = "select playerid, SUM(?) AS ? FROM statrecords where season = ? GROUP BY playerid " +
-                                              "ORDER BY SUM(?) desc";
-    private static final String HR_SQL =      "select playerid, SUM(bat_hr) AS ? FROM statrecords where season = ? GROUP BY playerid " +
-                                              "ORDER BY SUM(bat_hr) desc";
-    private static final String WALKS_SQL =   "select playerid, SUM(bat_walks) AS ? FROM statrecords where season = ? GROUP BY playerid " +
-                                              "ORDER BY SUM(bat_walks) desc";
-    private static final String STRIKEOUTS_SQL = "select playerid, SUM(bat_strikeouts) AS Strikeouts FROM statrecords where season = ? GROUP BY playerid " +
-                                              "ORDER BY SUM(bat_strikeouts) desc";
-    private static final String HITS_SQL =    "select playerid, SUM(bat_hits) AS Hits FROM statrecords where season = ? GROUP BY playerid " +
-                                              "ORDER BY SUM(bat_hits) desc";
-    private static final String SB_SQL =      "select playerid, SUM(bat_sb) AS SB FROM statrecords where season = ? GROUP BY playerid " +
-                                              "ORDER BY SUM(bat_sb) desc";
-    private static final String ERRORS_SQL =  "select playerid, SUM(errors) AS Errors FROM statrecords where season = ? GROUP BY playerid " +
-                                              "ORDER BY SUM(errors) desc";
-    private static final String RUNS_SQL =    "select playerid, SUM(bat_runs) AS Runs FROM statrecords where season = ? GROUP BY playerid " +
-                                              "ORDER BY SUM(bat_runs) desc";
-    private static final String RBI_SQL =    "select playerid, SUM(bat_rbi) AS RBI FROM statrecords where season = ? GROUP BY playerid " +
-                                              "ORDER BY SUM(bat_rbi) desc";
-    private static final String HBP_SQL =      "select playerid, SUM(bat_hpb) AS SB FROM statrecords where season = ? GROUP BY playerid " +
-                                              "ORDER BY SUM(bat_hbp) desc";
-    private static final String GP_SQL =     "select playerid, SUM(pitch_gp) AS gs FROM statrecords where season = ? GROUP BY playerid " +
-                                              "ORDER BY SUM(pitch_gp) desc";
-    private static final String GS_SQL =     "select playerid, SUM(pitch_gs) AS gs FROM statrecords where season = ? GROUP BY playerid " +
-                                              "ORDER BY SUM(pitch_gs) desc";
-    private static final String CG_SQL =     "select playerid, SUM(pitch_cg) AS cg FROM statrecords where season = ? GROUP BY playerid " +
-                                              "ORDER BY SUM(pitch_cg) desc";
-    private static final String SHO_SQL =     "select playerid, SUM(pitch_sho) AS sho FROM statrecords where season = ? GROUP BY playerid " +
-                                              "ORDER BY SUM(pitch_sho) desc";
-    private static final String WINS_SQL =    "select playerid, SUM(pitch_wins) AS wins FROM statrecords where season = ? GROUP BY playerid " +
-                                              "ORDER BY SUM(pitch_wins) desc";
-    private static final String LOSS_SQL =    "select playerid, SUM(pitch_loss) AS loss FROM statrecords where season = ? GROUP BY playerid " +
-                                              "ORDER BY SUM(pitch_loss) desc";
-    private static final String SAVE_SQL =    "select playerid, SUM(pitch_save) AS cg FROM statrecords where season = ? GROUP BY playerid " +
-                                              "ORDER BY SUM(pitch_save) desc";
-    private static final String IP_SQL =     "select playerid, SUM(pitch_ipfull) AS ip FROM statrecords where season = ? GROUP BY playerid " +
-                                              "ORDER BY SUM(pitch_ipfull) desc";
-    private static final String BBA_SQL =     "select playerid, SUM(pitch_walks) AS walks FROM statrecords where season = ? GROUP BY playerid " +
-                                              "ORDER BY SUM(pitch_walks) desc";
-    private static final String PSTRIKEOUTS_SQL = "select playerid, SUM(pitch_strikeouts) AS strikeouts FROM statrecords where season = ? GROUP BY playerid " +
-                                              "ORDER BY SUM(pitch_strikeouts) desc";
-    private static final String HRA_SQL =     "select playerid, SUM(pitch_hr) AS hr FROM statrecords where season = ? GROUP BY playerid " +
-                                              "ORDER BY SUM(pitch_hr) desc";
+//    private static final String DOUBLES_SQL =  "select playerid, SUM(?) AS ? FROM statrecords where season = ? GROUP BY playerid " +
+//                                              "ORDER BY SUM(bat_doubles) desc";
+//    private static final String TRIPLES_SQL = "select playerid, SUM(?) AS ? FROM statrecords where season = ? GROUP BY playerid " +
+//                                              "ORDER BY SUM(?) desc";
+//    private static final String HR_SQL =      "select playerid, SUM(bat_hr) AS ? FROM statrecords where season = ? GROUP BY playerid " +
+//                                              "ORDER BY SUM(bat_hr) desc";
+//    private static final String WALKS_SQL =   "select playerid, SUM(bat_walks) AS ? FROM statrecords where season = ? GROUP BY playerid " +
+//                                              "ORDER BY SUM(bat_walks) desc";
+//    private static final String STRIKEOUTS_SQL = "select playerid, SUM(bat_strikeouts) AS Strikeouts FROM statrecords where season = ? GROUP BY playerid " +
+//                                              "ORDER BY SUM(bat_strikeouts) desc";
+//    private static final String HITS_SQL =    "select playerid, SUM(bat_hits) AS Hits FROM statrecords where season = ? GROUP BY playerid " +
+//                                              "ORDER BY SUM(bat_hits) desc";
+//    private static final String SB_SQL =      "select playerid, SUM(bat_sb) AS SB FROM statrecords where season = ? GROUP BY playerid " +
+//                                              "ORDER BY SUM(bat_sb) desc";
+//    private static final String ERRORS_SQL =  "select playerid, SUM(errors) AS Errors FROM statrecords where season = ? GROUP BY playerid " +
+//                                              "ORDER BY SUM(errors) desc";
+//    private static final String RUNS_SQL =    "select playerid, SUM(bat_runs) AS Runs FROM statrecords where season = ? GROUP BY playerid " +
+//                                              "ORDER BY SUM(bat_runs) desc";
+//    private static final String RBI_SQL =    "select playerid, SUM(bat_rbi) AS RBI FROM statrecords where season = ? GROUP BY playerid " +
+//                                              "ORDER BY SUM(bat_rbi) desc";
+//    private static final String HBP_SQL =      "select playerid, SUM(bat_hpb) AS SB FROM statrecords where season = ? GROUP BY playerid " +
+//                                              "ORDER BY SUM(bat_hbp) desc";
+//    private static final String GP_SQL =     "select playerid, SUM(pitch_gp) AS gs FROM statrecords where season = ? GROUP BY playerid " +
+//                                              "ORDER BY SUM(pitch_gp) desc";
+//    private static final String GS_SQL =     "select playerid, SUM(pitch_gs) AS gs FROM statrecords where season = ? GROUP BY playerid " +
+//                                              "ORDER BY SUM(pitch_gs) desc";
+//    private static final String CG_SQL =     "select playerid, SUM(pitch_cg) AS cg FROM statrecords where season = ? GROUP BY playerid " +
+//                                              "ORDER BY SUM(pitch_cg) desc";
+//    private static final String SHO_SQL =     "select playerid, SUM(pitch_sho) AS sho FROM statrecords where season = ? GROUP BY playerid " +
+//                                              "ORDER BY SUM(pitch_sho) desc";
+//    private static final String WINS_SQL =    "select playerid, SUM(pitch_wins) AS wins FROM statrecords where season = ? GROUP BY playerid " +
+//                                              "ORDER BY SUM(pitch_wins) desc";
+//    private static final String LOSS_SQL =    "select playerid, SUM(pitch_loss) AS loss FROM statrecords where season = ? GROUP BY playerid " +
+//                                              "ORDER BY SUM(pitch_loss) desc";
+//    private static final String SAVE_SQL =    "select playerid, SUM(pitch_save) AS cg FROM statrecords where season = ? GROUP BY playerid " +
+//                                              "ORDER BY SUM(pitch_save) desc";
+//    private static final String IP_SQL =     "select playerid, SUM(pitch_ipfull) AS ip FROM statrecords where season = ? GROUP BY playerid " +
+//                                              "ORDER BY SUM(pitch_ipfull) desc";
+//    private static final String BBA_SQL =     "select playerid, SUM(pitch_walks) AS walks FROM statrecords where season = ? GROUP BY playerid " +
+//                                              "ORDER BY SUM(pitch_walks) desc";
+//    private static final String PSTRIKEOUTS_SQL = "select playerid, SUM(pitch_strikeouts) AS strikeouts FROM statrecords where season = ? GROUP BY playerid " +
+//                                              "ORDER BY SUM(pitch_strikeouts) desc";
+//    private static final String HRA_SQL =     "select playerid, SUM(pitch_hr) AS hr FROM statrecords where season = ? GROUP BY playerid " +
+//                                              "ORDER BY SUM(pitch_hr) desc";
     private static final String ERA_SQL =     "select playerid, SUM(pitch_ipfull) AS ipfull, SUM(pitch_ipfract) as ipfract, SUM(pitch_er) as er " + 
                                               "FROM statrecords where season = ? GROUP BY playerid " +
                                               "ORDER BY (SUM(pitch_er)*9)/(SUM(pitch_ipfull) + SUM(pitch_ipfract)*0.3 + 0.001) asc";
-    private static final String SINGLE_VAL_SQL = "select playerid, SUM(?) AS ? FROM statrecords where season = ? GROUP BY playerid " +
-                                              "ORDER BY SUM(?) desc";
+//    private static final String SINGLE_VAL_SQL = "select playerid, SUM(?) AS ? FROM statrecords where season = ? GROUP BY playerid " +
+//                                              "ORDER BY SUM(?) desc";
     
     private static final String SERIES_SUM_SQL = "select statsteamid, sum(bat_runs) as bat_runs, sum(bat_hits) as bat_hits, " +
                                               "sum(bat_walks) as bat_walks, sum(bat_strikeouts) as bat_so, sum(games) as games, sum(bat_rbi) as bat_rbi, " +
@@ -692,12 +692,15 @@ public class StatsManager
                 wkVisitingStats.getGames()*9 >= wkVisitingStats.getPitch_gs()*9)
             {
                 wkSummary.setStatsEntered(true);
+                wkSummary.setIncomplete(false);
             }
-            else
+            else if (wkHomeStats.getGames() > 0 ||
+                    wkVisitingStats.getGames() > 0)
             {
+            	wkSummary.setIncomplete(true);
+            	wkSummary.setStatsEntered(false);
                 errors.add(0,"Not enough games played entered for either the visiting or home team");
-            }
-            
+            }             
         }
         catch (Exception e)
         {
@@ -1636,6 +1639,7 @@ public class StatsManager
         private SeriesStatRecord visitingTeamStats;
         private boolean validStats = false;
         private boolean statsEntered = false;
+        private boolean incomplete = false;
         
         public boolean isStatsEntered()
         {
@@ -1645,6 +1649,16 @@ public class StatsManager
         public void setStatsEntered(boolean statsEntered)
         {
             this.statsEntered = statsEntered;
+        }
+        
+        public void  setIncomplete(boolean incomplete) 
+        {
+        	this.incomplete = incomplete;
+        }
+        
+        public boolean isStatsIncomplete() 
+        {
+        	return incomplete;
         }
 
         public String[] getStatus()

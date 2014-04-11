@@ -3,6 +3,7 @@ package com.oreilly.javaxslt.util;
 import java.io.IOException;
 import java.io.StringReader;
 import java.io.StringWriter;
+import java.net.URLDecoder;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -15,6 +16,7 @@ import javax.xml.transform.TransformerException;
 import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
 
+import org.apache.commons.lang.StringEscapeUtils;
 import org.jdom.Document;
 import org.jdom.output.XMLOutputter;
 
@@ -62,9 +64,18 @@ public class XSLTRenderHelper {
 
             // pass a parameter to the XSLT stylesheet
             //trans.setParameter("rootDir", "/forum/");
+            
+            
+            StringWriter stringWriter = new StringWriter();
+            StreamResult outputStreamResult = new StreamResult(stringWriter);
 
             trans.transform(new StreamSource(new StringReader(sw.toString())),
-                            new StreamResult(response.getWriter()));
+                            outputStreamResult);
+            
+            String unescapedString = StringEscapeUtils.unescapeHtml(stringWriter.toString());
+            
+            response.getOutputStream().write(unescapedString.getBytes());
+            
         } catch (IOException ioe) {
             throw ioe;
         } catch (Exception ex) {

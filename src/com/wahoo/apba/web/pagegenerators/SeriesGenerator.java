@@ -118,7 +118,7 @@ public class SeriesGenerator implements IPageGenerator
         {
             String wkSeriesText = XSLTRenderHelper.render(inServlet, inSeries, "SeriesResultEmail.xsl");
             wkMailList = emailManager.getMemberAddresses();
-            Email.sendMail("cphillips@wahoosoftware.com", wkMailList, "Series Report", wkSeriesText);
+            Email.sendMail("cmp1166@gmail.com", wkMailList, "Series Report", wkSeriesText);
         }
         catch (Exception wkEx)
         {

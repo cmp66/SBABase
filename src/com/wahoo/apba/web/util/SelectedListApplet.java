@@ -249,10 +249,10 @@ public class SelectedListApplet extends Applet implements ItemListener, ActionLi
     }
         
     
-    @SuppressWarnings("unchecked")
-    private void deSelect(String inId)
+    @SuppressWarnings("unused")
+	private void deSelect(String inId)
     {
-        Enumeration lclMembers = _table.getRows().elements();
+        Enumeration<Object> lclMembers = _table.getRows().elements();
             
         MemberRow lclRow = null;
 

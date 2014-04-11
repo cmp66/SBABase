@@ -65,13 +65,16 @@ public class Email
 			}
 
 			Properties	wkProps = new Properties();
-			wkProps.put("mail.smtp.host", "mail.wahoosoftware.com");
-			wkProps.put("mail.smtp.port", "5125");
+			wkProps.put("mail.smtp.host", "smtp.gmail.com");
+			wkProps.put("mail.smtp.port", "465");
 			wkProps.put("mail.smtp.auth", "true");
+			wkProps.put("mail.smtp.socketFactory.port", "465");
+			wkProps.put("mail.smtp.socketFactory.class",
+					"javax.net.ssl.SSLSocketFactory");
             //wkProps.put("mail.user", "cphillips");
             //wkProps.put("mail.password", "buckeye");
 
-			Session wkSession = Session.getInstance(wkProps, new EmailAuthenticator("cphillips@wahoosoftware.com", "buckeye"));
+			Session wkSession = Session.getInstance(wkProps, new EmailAuthenticator("cmp1166@gmail.com", "rulg qtrl gjta kfdm"));
 			// create a message
 			MimeMessage wkMsg = new MimeMessage(wkSession);
 			wkMsg.setFrom(new InternetAddress(wkFromAddr));

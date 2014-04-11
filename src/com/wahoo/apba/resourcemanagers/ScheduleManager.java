@@ -184,6 +184,10 @@ public class ScheduleManager
                     {
                         linkText= "Ok";;
                     }
+                } 
+                else if (seriesstats.isStatsIncomplete()) 
+                {
+                	linkText = "Incomplete";
                 }
                 
                 wkEntry.addContent(new Element("SeriesStatDetailText").setText(linkText));

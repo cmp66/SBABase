@@ -71,7 +71,7 @@ public class ControllerServlet extends HttpServlet
  
         try
         {
-            Email.sendMail("cphillips@wahoosoftware.com", "cphillips@wahoosoftware.com", "Server started", "Server started");
+            Email.sendMail("cmp1166@gmail.com", "cmp1166@gmail.com", "Server started", "Server started");
         }
         catch (Exception wkEx)
         {
