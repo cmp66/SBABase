@@ -417,7 +417,6 @@ public class StatRecord implements java.io.Serializable, GenericStatRecord
         this.pitch_walks += inRecord.getPitch_walks();
         this.pitch_strikeouts += inRecord.getPitch_strikeouts();
         this.pitch_hr += inRecord.getPitch_hr();
-        this.bat_hbp += inRecord.getBat_hbp();
         this.pitch_runs += inRecord.getPitch_runs();
         
         this.pitch_ipfull += inRecord.getPitch_ipfull();

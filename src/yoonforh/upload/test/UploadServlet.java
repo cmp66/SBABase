@@ -159,8 +159,9 @@ public class UploadServlet extends HttpServlet {
 		} else {
 		    printResult(handler.getUploadDataMap());
 		    TeamStat wkStat = (TeamStat) _util.getBean("TeamStat");
-		    wkStat.processImportStatsFiles();
+		    wkStat.processImportStatsFiles();  
 		    this.response.sendRedirect("Controller?page=teamoverview");
+		    return;
 
 		}
 	    } finally {
@@ -198,7 +199,7 @@ public class UploadServlet extends HttpServlet {
 		writer.println("<TD>" + (data.isFile() ? "file" : "") + "</TD>");
 		writer.println("</TR>");
 	    }
-	    writer.println("<TR>,<TD><a href='/sba/Controller?page=main'><IMG bgcolor='#000000' SRC='images/btn_return.gif' align='center'/></a></TD></TR>");
+	    writer.println("<TR>,<TD><a href='/NABL/Controller?page=main'><IMG bgcolor='#000000' SRC='images/btn_return.gif' align='center'/></a></TD></TR>");
 	    writer.println("</TABLE>");
 	    writer.println("</BODY></HTML>");
 	}
