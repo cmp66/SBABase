@@ -6,20 +6,12 @@
 
 package com.wahoo.apba.resourcemanagers;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.sql.Timestamp;
-import java.sql.Types;
-import java.util.ArrayList;
-import java.util.Enumeration;
-import java.util.HashMap;
-import java.util.Hashtable;
-import java.util.Iterator;
-import java.util.Vector;
-
+import com.wahoo.apba.database.CardedPlayer;
+import com.wahoo.apba.database.Player;
+import com.wahoo.apba.database.PlayerCard;
+import com.wahoo.apba.database.util.DBUtil;
+import com.wahoo.apba.web.util.ListMember;
+import com.wahoo.util.Email;
 import org.jdom.Document;
 import org.jdom.Element;
 import org.jdom.JDOMException;
@@ -27,12 +19,17 @@ import org.jdom.input.SAXBuilder;
 import org.springframework.dao.IncorrectResultSizeDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 
-import com.wahoo.apba.database.CardedPlayer;
-import com.wahoo.apba.database.Player;
-import com.wahoo.apba.database.PlayerCard;
-import com.wahoo.apba.database.util.DBUtil;
-import com.wahoo.apba.web.util.ListMember;
-import com.wahoo.util.Email;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Timestamp;
+import java.sql.Types;
+import java.util.ArrayList;
+import java.util.Enumeration;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Vector;
 
 /**
  *
@@ -384,7 +381,7 @@ public class PlayerManager
             wkConn = DBUtil.getReadOnlyDBConnection();
             wkStatement = wkConn.prepareStatement(CARDED_LIST_SQL);
             
-            wkStatement.setInt(1, 2013);
+            wkStatement.setInt(1, 2017);
             
             wkResultSet = wkStatement.executeQuery();
             
