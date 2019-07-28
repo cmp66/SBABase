@@ -685,7 +685,18 @@ public class StatsManager
             if (wkVisitingStats.getBat_strikeouts() != wkHomeStats.getPitch_strikeouts()) errors.add("Visitor batting strikeouts not equal to Home pitching strikeouts");
             if (wkHomeStats.getPitch_wins() != wkVisitingStats.getPitch_loss()) errors.add("Home Pitching wins not equal to Visitor pitching loss");
             if (wkHomeStats.getPitch_loss() != wkVisitingStats.getPitch_wins()) errors.add("Home Pitching loss not equal to Visitor pitching wins");
-        
+            if (wkHomeStats.getPitch_gs() != wkVisitingStats.getPitch_gs()) errors.add("Home Pitching starts not equal to Visitor pitcher starts");
+
+            int homeXbh = wkHomeStats.getBat_doubles() + wkHomeStats.getBat_triples() + wkHomeStats.getBat_hr();
+            int visitXbh = wkVisitingStats.getBat_doubles() + wkVisitingStats.getBat_triples() + wkVisitingStats.getBat_hr();
+
+            if (wkHomeStats.getBat_hits() < homeXbh) errors.add("Home Extra Base Hits (D,T,HR) exceeds total number of hits.");
+            if (wkVisitingStats.getBat_hits() < visitXbh) errors.add("Visiting Extra Base Hits (D,T,HR) exceeds total number of hits.");
+            if (wkHomeStats.getBat_rbi() > wkHomeStats.getBat_runs()) errors.add("Home RBI's greater than home total runs");
+            if (wkVisitingStats.getBat_rbi() > wkVisitingStats.getBat_runs()) errors.add("Visiting RBI's greater than visit total runs");
+            if (wkHomeStats.getPitch_save() > wkHomeStats.getPitch_wins()) errors.add("Home saves greater than home wins");
+            if (wkVisitingStats.getPitch_save() > wkVisitingStats.getPitch_wins()) errors.add("Visiting saves greater than visiting wins");
+
             if (wkHomeStats.getGames() > 0 &&
                 wkVisitingStats.getGames() > 0 &&
                 wkHomeStats.getGames() >= wkHomeStats.getPitch_gs()*9 && 

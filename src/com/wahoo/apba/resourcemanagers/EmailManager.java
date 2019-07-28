@@ -24,7 +24,7 @@ public class EmailManager
 
 	//FIXME  Remove hardcoded address in query
      private static String GET_PRIM_ADDRESS_SQL = "select * from emailaddresses where primaryaddress = 'Y' and memberid in " +
-         "(select t.memberid from teams as t join teamresults as tr on tr.teamid = t.id where tr.year=2018)";
+         "(select t.memberid from teams as t join teamresults as tr on tr.teamid = t.id where tr.year=2019)";
      private static String GET_EMAIL_FOR_OWNER = "select * from emailaddresses where memberid = ? and primaryaddress = 'Y'"; 
      
     /** Creates a new instance of EmailManager */
