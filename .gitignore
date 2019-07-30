@@ -10,6 +10,16 @@
 */data/*
 pom.xml.versionsBackup
 
+# IntelliJ
+*.iml*
+
+# VS Code 
+*.vscode**
+
+#Build files
+target/
+out/
+
 # ClearCase Remote Client metadata files
 *.copyarea.db
 
