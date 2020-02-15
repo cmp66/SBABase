@@ -863,8 +863,10 @@ private void initSortingAndResizing() {
 		"2", "a", "Alice", "active" } ));
 	lines.addElement( new SimpleSortableTableRow( new String[] {
 		"3", "b", "Sara", "active" } ));
-	lines.addElement( new SimpleSortableTableRow( new String[] {
-		"4", "ä", "Quentin", "active" } ));
+
+	// cmp commented out for now to fix compile error
+	//lines.addElement( new SimpleSortableTableRow( new String[] {
+	//	"4", "ï¿½", "Quentin", "active" } ));
 
 	// Set applet background (will be used by the table as the default background).
 	setBackground( Color.white );

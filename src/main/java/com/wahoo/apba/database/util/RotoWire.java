@@ -65,7 +65,7 @@ public class RotoWire
         	}
         }
         
-        rotoPlayerManager.updateMissing();
+        //rotoPlayerManager.updateMissing();
     }
     
 	public static void main(String[] args)
@@ -102,23 +102,13 @@ public class RotoWire
                 wkRecord.setJdbcTemplate(jdbcTemplate);
                 wkRecord.parsePlayerName(wkLine);
                 
-                //read blank line
+                //read the rotowire link
                 wkLine = readLine(wkReader);
-                
-                wkLine = readLine(wkReader);
-                do
-                {
-                	wkRecord.addNews(wkLine);
-                	wkLine = readLine(wkReader);
-                } while (null != wkLine && !wkLine.equals(" "));
-                	
-                wkLine = readLine(wkReader);
-                do
-                {
-                	wkRecord.addComment(wkLine);
-                	wkLine = readLine(wkReader);
-                } while (null != wkLine && !wkLine.equals(" "));
-                	
+
+				wkRecord.addNews(readLine(wkReader));
+				wkRecord.addComment(readLine(wkReader));
+
+				System.out.println(wkRecord.toString());
                 wkRecord.insert();
                 //System.out.println(wkRecord.toString());
             }
@@ -138,45 +128,34 @@ public class RotoWire
 			wkReader = new BufferedReader( new StringReader( inReport ), MY_BUFF_SIZE  );
 			String wkLine = null;
             
-            while (true)
-            {
-            	//System.out.println("Checking for player");
-            	wkLine = readLine(wkReader);
-                //System.out.println("Line: " + wkLine);
-                if (null == wkLine)
-                {
-                	//System.out.println("returning");
-                    rotoPlayerManager.updateMissing();
+            while (true) {
+				//System.out.println("Checking for player");
+				wkLine = readLine(wkReader);
+				//System.out.println("Line: " + wkLine);
+				if (null == wkLine) {
+					//System.out.println("returning");
+					//rotoPlayerManager.updateMissing();
 					return;
-                }
-                if (!checkForNextPlayer(wkLine))
-                	continue;
-                
-                //System.out.println("Found player");
-                RotoPlayerRecord wkRecord = new RotoPlayerRecord();
-                wkRecord.setJdbcTemplate(jdbcTemplate);
-                wkRecord.parsePlayerName(wkLine);
-                
-                //read blank line
-                wkLine = readLine(wkReader);
-                
-                wkLine = readLine(wkReader);
-                do
-                {
-                	wkRecord.addNews(wkLine);
-                	wkLine = readLine(wkReader);
-                } while (null != wkLine && !wkLine.equals(" "));
-                	
-                wkLine = readLine(wkReader);
-                do
-                {
-                	wkRecord.addComment(wkLine);
-                	wkLine = readLine(wkReader);
-                } while (null != wkLine && !wkLine.equals(" "));
-                	
-                wkRecord.insert();
-                //System.out.println(wkRecord.toString());
-            }
+				}
+				if (!checkForNextPlayer(wkLine))
+					continue;
+
+				//System.out.println("Found player");
+				RotoPlayerRecord wkRecord = new RotoPlayerRecord();
+				wkRecord.setJdbcTemplate(jdbcTemplate);
+				wkRecord.parsePlayerName(wkLine);
+
+				//read rotowire link
+				wkLine = readLine(wkReader);
+				// read blank line
+				wkRecord.addNews(readLine(wkReader));
+
+				wkRecord.addComment(readLine(wkReader));
+
+				System.out.println(wkRecord.toString());
+				wkRecord.insert();
+			}
+
 		}
 		catch (Exception e)
 		{
@@ -252,11 +231,12 @@ public class RotoWire
 			inLine.equals("2B") ||
 			inLine.equals("3B") ||
 			inLine.equals("3B") ||
-			inLine.equals("SS"))
+			inLine.equals("SS") ||
+			inLine.equals("DH"))
 			return inLine;
 		else if (inLine.equals("P)"))
 		    return ("P");
-		else if (inLine.equals("C"))
+		else if (inLine.equals("C)"))
 			return ("C");
 		
 		return null;

@@ -125,7 +125,7 @@ public class RotoPlayerRecord
 	
 	public void parsePlayerName(String inLine)
 	{
-		//System.out.println("Parsing " + inLine);
+		//System.out.println("Parsing Player name " + inLine);
 		StringTokenizer wkParser = new StringTokenizer(inLine, " ");
 		
 		String wkToken = wkParser.nextToken();
@@ -273,12 +273,12 @@ public class RotoPlayerRecord
 			Integer wkId = (Integer) jdbcTemplate.queryForObject(PLAYER_LOOKUP, 
 											       new Object[] { _name },
 												   Integer.class);
-			//System.out.println("Inserting New Record");
+			System.out.println("Inserting New Record");
 			wkInsertedNew = insertNewRecord(wkId.intValue());
 		}
 		catch (IncorrectResultSizeDataAccessException e)
 		{
-			//System.out.println("Inserting Missing Record");
+			System.out.println("Inserting Missing Record");
 			insertMissingRecord();
 		}
 		return wkInsertedNew;
@@ -299,12 +299,12 @@ public class RotoPlayerRecord
 												   Integer.class);
 			if (null != wkId)
 			{
-				//System.out.println("Duplicate entry for " + _name);
+				System.out.println("Duplicate entry for " + _name);
 				wkNew = true;
 			}
 			else
 			{
-				//System.out.println("unique new record");
+				System.out.println("unique new record");
 				jdbcTemplate.update(INSERT_NEW,
 							    new Object[] { Integer.valueOf(inId),
 											   _team,
@@ -340,11 +340,11 @@ public class RotoPlayerRecord
 		
 			if (null != wkName)
 			{
-				//System.out.println("Duplicate entry for " + _name);
+				System.out.println("Duplicate Missing entry for " + _name);
 			}
 			else
 			{
-				//System.out.println("unique missing record");
+				System.out.println("unique missing record");
 				jdbcTemplate.update(INSERT_MISSING,
 								new Object[] { _name,
 											   _team,

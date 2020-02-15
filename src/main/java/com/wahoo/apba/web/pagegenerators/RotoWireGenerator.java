@@ -80,6 +80,16 @@ public class RotoWireGenerator implements IPageGenerator
         try
         {
             String wkNews = processParameters(inRequest);
+
+            wkNews = wkNews.replaceAll("<p>", "\n");
+            wkNews = wkNews.replaceAll("<b>" , "");
+            wkNews = wkNews.replaceAll("</b>", "");
+            wkNews = wkNews.replaceAll("<br>" , "\n");
+
+            System.out.println("FULL REPORT");
+            System.out.println(wkNews);
+            System.out.println("_________________________");
+
         
             //RotoWire wkRoto = new RotoWire();
             rotoWire.parseReport(wkNews);
